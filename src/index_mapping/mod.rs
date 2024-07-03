@@ -1,6 +1,6 @@
 use crate::sketch::{Flag, FlagType};
 use crate::{serde, Error};
-use rust_strictmath::cbrt;
+use libm::cbrt;
 
 use crate::output::Output;
 
