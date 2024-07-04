@@ -10,12 +10,12 @@ use crate::store::{
 };
 
 pub struct DDSketch {
-    index_mapping: IndexMapping,
-    min_indexed_value: f64,
-    max_indexed_value: f64,
-    negative_value_store: Box<dyn Store>,
-    positive_value_store: Box<dyn Store>,
-    zero_count: f64,
+    pub index_mapping: IndexMapping,
+    pub min_indexed_value: f64,
+    pub max_indexed_value: f64,
+    pub negative_value_store: Box<dyn Store>,
+    pub positive_value_store: Box<dyn Store>,
+    pub zero_count: f64,
 }
 
 #[derive(PartialEq)]

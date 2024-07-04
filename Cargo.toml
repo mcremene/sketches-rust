@@ -12,3 +12,9 @@ exclude = [".gitignore"]
 
 [dependencies]
 libm = "0.2.8"
+protobuf = "3.5.0"
+
+[build-dependencies]
+protobuf-codegen = "3.5.0"
+protoc-rust = "2.28.0"
+

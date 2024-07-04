@@ -4,7 +4,7 @@ use libm::cbrt;
 
 use crate::output::Output;
 
-#[derive(PartialEq, Debug)]
+#[derive(PartialEq, Debug, Clone)]
 pub enum IndexMapping {
     LogarithmicMapping(f64, f64, f64, f64),
     CubicallyInterpolatedMapping(f64, f64, f64, f64),

@@ -63,9 +63,14 @@ mod error;
 mod index_mapping;
 mod input;
 mod output;
+pub mod protos;
 mod serde;
 mod sketch;
 mod store;
+
+pub mod proto {
+    include!(concat!(env!("OUT_DIR"), "/protos/mod.rs"));
+}
 
 pub use self::error::Error;
 pub use self::sketch::DDSketch;

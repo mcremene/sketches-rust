@@ -1,5 +1,8 @@
 use sketches_rust::DDSketch;
 
+#[cfg(test)]
+mod test_proto;
+
 #[test]
 #[should_panic]
 fn test_sketch_crate_panic_0() {
